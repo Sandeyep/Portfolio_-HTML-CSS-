@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESTAURANT</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="stylesheet" href="style.css">
+<style>
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("/images/reserve.jpg");
+    background-size: cover; 
+    background-position: center; 
+    font-family: Arial, sans-serif;
+}
+
+        .reservation {
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center; 
+}
+
+.reservation h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.reservation p {
+    color: rgb(255, 0, 0);
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.reservation form {
+    
+    background: rgba(69, 12, 12, 0.8);
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px; 
+    border-radius: 10px; 
+    text-align: left; 
+}
+
+.reservation form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.reservation form input[type="text"],
+.reservation form input[type="email"],
+.reservation form input[type="tel"],
+.reservation form input[type="date"],
+.reservation form input[type="time"],
+.reservation form input[type="number"],
+.reservation form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #fff;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+
+.reservation form button {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block; 
+    margin: 0 auto; 
+    
+}
+.reservation form button:hover{
+    background-color: red;
+}
+</style>
+</head>
+<body>
+    <div class="website">
+        <header>
+            <h1>Patel's Restaurant</h1>
+            
+            <nav>
+                <ul>
+                  <li><a href="home.html">Home</a></li>
+                  <li><a href="menu.html">Menu</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="reservation.html">Reservation</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+              </nav>
+              
+            </header><hr>
+          
+            <section class="reservation">
+                <h2>Make a Reservation</h2>
+                
+                
+                <form action="reservation_process.php" method="POST">
+                    <p>Please fill the form below for Reservation:</p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                    
+                    <label for="time">Time:</label>
+                    <input type="time" id="time" name="time" required>
+                    
+                    <label for="guests">Number of Guests:</label>
+                    <input type="number" id="guests" name="guests" required>
+                    
+            
+                    <button type="submit">Submit Reservation</button>
+                </form>
+            </section>
+
+
+
+            <div class="Footer">
+                <div class="footer-container">
+                    <div class="footer-contact">
+                        <h4>Contact Us</h4>
+                        <p>Mitrapark,Kathmandu<br>Opposite to Main Chowk</p>
+                        <p>Phone:9808166804<br>Email:sandeyeppatel@gmail.com</p>
+                    </div>
+                    
+                    <div class="footer-social">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/sandip.shah.9022662"><i class='bx bxl-facebook-square' ></i></a>
+                            <a href="https://www.instagram.com/sande_yep/?igshid=ZGUzMzM3NWJiOQ%3D%3D&fbclid=IwAR3XtVfvlEq65qlbJYGH5Q7n2wPx3l713ei3BTMSc1NbmqRiC4MvN7_LTCc"><i class='bx bxl-instagram' ></i></a>
+                            <a href="#"><i class='bx bxl-whatsapp' ></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="reservation.html">Reservation</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+               
+                <div class="copyright">
+                  
+                    <p>&copy;Copyright 2023 Patel's Restaurant</p>
+                </div>
+</div>
+
+
+</body>
+</html>
