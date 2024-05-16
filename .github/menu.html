@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESTAURANT</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="stylesheet" href="style.css">
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.website {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: rgb(8, 0, 0);
+    opacity: 0.7;
+    color: #eaff00;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+  
+}
+
+h1, h2 {
+    font-family: 'Your Restaurant Font', cursive;
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+}
+
+
+
+nav {
+    text-align: center;
+    margin-top: 15px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+nav li {
+    margin: 0 20px; 
+}
+
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff9900; 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("menubackground.jpg");
+    background-size: 100% 100%;
+    background-size: cover; 
+    background-position: center; 
+    font-family: Arial, sans-serif;
+}
+
+  
+        /* Media query for smaller screens */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 5px; /* Adjust the spacing for smaller screens */
+            }
+
+            nav li a {
+                font-size: 16px; /* Adjust font size for smaller screens */
+            }
+        }
+
+        
+
+.gallery {
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.photo-grid {
+    margin-left: 105px;
+    display: grid;
+    grid-template-columns: repeat(3, 0.3fr); 
+    gap: 50px; 
+}
+
+
+.photo {
+    width: 400px; 
+    height: 400px; 
+    border: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+    overflow: hidden;
+    position: relative; 
+}
+
+.photo img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+
+.photo .dish-details {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(204, 44, 44, 0.7);
+    padding: 5px;
+    border-radius: 0 0 5px 5px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.photo .dish-name {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.photo .dish-price {
+    font-size: 14px;
+}
+  
+.photo:hover {
+    transform: scale(1.03); 
+    transition: transform 0.5s ease; 
+    box-shadow: 0 0 40px rgb(216, 213, 11); 
+}
+
+.photo:hover .dish-details {
+    background-color: rgba(204, 44, 44, 0.9); 
+}
+
+
+</style>
+</head>
+<body>
+    <div class="website">
+        <hr>
+        <header>
+            <h1>Patel's Restaurant</h1>
+            
+            <nav>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="menu.html">Menu</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="reservation.html">Reservation</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+              </nav>
+              
+            </header><hr>
+
+            <section class="gallery">
+                <h2>Menu</h2>
+                <div class="photo-grid">
+                    <div class="photo">
+                        <img src="china.jpg" alt="">
+                        <div class="dish-details">
+                            <p class="dish-name">Dish 1</p>
+                            <p class="dish-price">Rs.90</p>
+                        </div>
+                    </div>
+                    <div class="photo">
+                        <img src="gundruk.jpg" alt="gundruk">
+                        <div class="dish-details">
+                            <p class="dish-name">Gundruk</p>
+                            <p class="dish-price">Rs.80</p>
+                        </div>
+                    </div>
+                    <div class="photo">
+                        <img src="chicken.jpg" alt="chicken">
+                        <div class="dish-details">
+                            <p class="dish-name">Chicken Fry</p>
+                            <p class="dish-price">Rs.999</p>
+                        </div>
+                    </div>
+                    <div class="photo">
+                        <img src="beer.webp" alt="Beer">
+                        <div class="dish-details">
+                            <p class="dish-name">Beer</p>
+                            <p class="dish-price">Rs.350</p>
+                        </div>
+                    </div>
+                    <div class="photo">
+                        <img src="yamari.jpg" alt="Yamari">
+                        <div class="dish-details">
+                            <p class="dish-name">Yamari</p>
+                            <p class="dish-price">Rs.150</p>
+                        </div>
+                    </div>
+                    <div class="photo">
+                        <img src="momo.webp" alt="Momo">
+                        <div class="dish-details">
+                            <p class="dish-name">Veg-Momo</p>
+                            <p class="dish-price">Rs.100</p>
+                        </div>
+                    </div>
+                    <div class="photo">
+                        <img src="fish.jpg" alt="fish">
+                        <div class="dish-details">
+                            <p class="dish-name">Fish</p>
+                            <p class="dish-price">Rs.460</p>
+                        </div>
+                    </div>
+                    <div class="photo">
+                        <img src="prawn.jpg" alt="Prawn">
+                        <div class="dish-details">
+                            <p class="dish-name">Prawn</p>
+                            <p class="dish-price">Rs.290</p>
+                        </div>
+                    </div>
+                    <div class="photo">
+                        <img src="salad.jpg" alt="Salad">
+                        <div class="dish-details">
+                            <p class="dish-name">Salad</p>
+                            <p class="dish-price">Rs.350</p>
+                        </div>
+                    </div>
+
+                   
+                </div>
+            </section>
+            
+            <div class="Footer">
+                <div class="footer-container">
+                    <div class="footer-contact">
+                        <h4>Contact Us</h4>
+                        <p>Mitrapark,Kathmandu<br>Opposite to Main Chowk</p>
+                        <p>Phone:9808166804<br>Email:sandeyeppatel@gmail.com</p>
+                    </div>
+                    
+                    <div class="footer-social">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/sandip.shah.9022662"><i class='bx bxl-facebook-square' ></i></a>
+                            <a href="https://www.instagram.com/sande_yep/?igshid=ZGUzMzM3NWJiOQ%3D%3D&fbclid=IwAR3XtVfvlEq65qlbJYGH5Q7n2wPx3l713ei3BTMSc1NbmqRiC4MvN7_LTCc"><i class='bx bxl-instagram' ></i></a>
+                            <a href="#"><i class='bx bxl-whatsapp' ></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="reservation.html">Reservation</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+               
+                <div class="copyright">
+                  
+                    <p>&copy;Copyright 2023 Patel's Restaurant</p>
+                </div>
+</div>
+
+
+</body>
+</html>

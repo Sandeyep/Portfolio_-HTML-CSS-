@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RESTAURANT</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   <link rel="stylesheet" href="style.css">
+<style>
+    
+    body {
+    margin: 0;
+    padding: 0;
+    background-image: url(cont.jpg);
+    background-size: cover; 
+    background-position: center; 
+    font-family: Arial, sans-serif;
+}
+.website {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+ .contact {
+    text-align: center;
+    margin-top:50px ;
+}
+
+.contact h2 {
+    color: rgb(115, 0, 255);
+}
+
+.contact form {
+    background: rgba(47, 41, 130, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 40rem; 
+    margin: 2rem auto; 
+    text-align: center;
+    padding: 2rem;
+    border-radius: 1rem; 
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 48%; 
+    padding: 1rem;
+    font-size: 1.4rem;
+    color: #0e0101;
+    border: none;
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contact form textarea {
+    width: 100%;
+    
+}
+
+.contact .btn {
+    background: #ff9900;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact .btn:hover {
+    background: #ff6600;
+    color: green;
+}
+
+/* CSS for the footer */
+
+.Footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    background-color: rgb(25, 46, 14);
+    opacity: 0.7;
+    padding: 20px;
+}
+
+
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.footer-contact,
+.footer-social,
+.footer-links,
+.copyright {
+    
+    text-align: center;
+    margin: 10px;
+}
+
+.footer-contact h4,
+.footer-social h4,
+.footer-links h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    margin-right: 10px;
+    display: block;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 5px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyright {
+    margin-top: 20px;
+}
+
+
+</style>
+</head>
+<body>
+    <div class="website">
+        <header>
+            <h1>Patel's Restaurant</h1>
+            
+            <nav>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="menu.html">Menu</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="reservation.html">Reservation</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                </ul>
+              </nav>
+            </header>
+            <section class="contact" id="contact">
+                <h2 class="heading">Contact<span> Us</span></h2>
+            
+                <form action="#">
+                    <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                        <input type="email" placeholder="Email Address ">
+                    </div>
+            
+            
+                    <div class="input-box">
+                        <input type="number" placeholder="Mobile Number ">
+                        <input type="text" placeholder="Email Subject">
+                    </div>
+            
+                    <textarea name="" id="" cols="2" rows="10" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send Message" class="btn">
+            
+                </form>
+            </section>
+<hr>
+            <div class="Footer">
+                <div class="footer-container">
+                    <div class="footer-contact">
+                        <h4>Contact Us</h4>
+                        <p>Mitrapark,Kathmandu<br>Opposite to Main Chowk</p>
+                        <p>Phone:9808166804<br>Email:sandeyeppatel@gmail.com</p>
+                    </div>
+                    
+                    <div class="footer-social">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/sandip.shah.9022662"><i class='bx bxl-facebook-square' ></i></a>
+                            <a href="https://www.instagram.com/sande_yep/?igshid=ZGUzMzM3NWJiOQ%3D%3D&fbclid=IwAR3XtVfvlEq65qlbJYGH5Q7n2wPx3l713ei3BTMSc1NbmqRiC4MvN7_LTCc"><i class='bx bxl-instagram' ></i></a>
+                            <a href="#"><i class='bx bxl-whatsapp' ></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="reservation.html">Reservation</a></li>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+               
+                <div class="copyright">
+                  
+                    <p>&copy;Copyright 2023 Patel's Restaurant</p>
+                </div>
+             </div>
+
+
+</div>
+
+
+</body>
+</html>
