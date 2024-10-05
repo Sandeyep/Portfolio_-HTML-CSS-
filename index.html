@@ -3,163 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RESTAURANT</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="indexstyle.css">
+    <title>Restaurant Website</title>
     <style>
         * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            text-decoration: none;
-            cursor: pointer;
-        }
-
-        .website {
-            height: 100vh;
-            width: 100vw;
-            display: flex;
-            flex-direction: column;
-        }
-
-        header {
-            /* background-color: rgb(8, 0, 0);
-            opacity: 0.7; */
-            color: #eaff00;
-            padding: 20px;
-            text-align: center;
-            font-size: 20px;
-        }
-
-        h1, h2 {
-            font-family: 'Your Restaurant Font', cursive; 
-            font-size: 36px;
-        }
-
-        p {
-            font-size: 18px;
-        }
-
-        nav {
-            text-align: center;
-            margin-top: 15px;
-        }
-
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center; 
-            align-items: center;
-        }
-
-        nav li {
-            margin: 0 20px; 
-        }
-
-        nav a {
-            text-decoration: none;
-            color: white;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #ff9900; 
-        }
-
-        body {
     margin: 0;
     padding: 0;
-    background-image: url('harii.jpg');
-    background-size: cover; 
-    background-position: center; 
-    font-family: Arial, sans-serif;
-    position: relative; /* Add this */
-    color: #fff; /* Change font color to white */
+    box-sizing: border-box;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-/* Add this pseudo-element for the overlay */
-body::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+html, body {
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.358); /* Blackish overlay */
-    z-index: -1;
 }
 
-/* Media query for smaller screens */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav li {
-        margin: 5px; /* Adjust the spacing for smaller screens */
-    }
-
-    nav li a {
-        font-size: 16px; /* Adjust font size for smaller screens */
-    }
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-image: url('images/background-1.png');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
-.Wrapper {
+.website {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgb(8, 0, 0);
+    opacity: 0.7;
+    color: #eaff00;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+h1, h2 {
+    font-family: 'Your Restaurant Font', cursive;
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+}
+
+nav {
+    text-align: center;
+    margin-top: 15px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+nav li {
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff9900;
+}
+
+.Wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    color: #fbee07; /* Change font color to yellow */
     padding: 20px;
-    border-radius: 10px; 
+    border-radius: 10px;
+    color: rgb(255, 234, 0);
+    padding: 99px;
 }
 
-.Wrapper p {
-    font-size: 22px;
-    color: #d1f11c; /* Change font color to orange */
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.menu-button {
+    background-color: #ff9900;
+    padding: 10px;
+    border-radius: 12px;
+    color: black;
+    margin-top: 12px;
 }
 
-.right-side {
-    opacity: 1;
-    text-align: left;
-    border-radius: 10px; 
+.menu-button a{
+    color: black;
+    font-weight: 700;
+}
+
+.right-side p {
+    background-color: black;
+    color: white;
+    padding: 3px;
+    font-size: 21px;
+}
+
+.Footer {
+    background-color: rgb(8, 0, 0);
+    opacity: 0.7;
+    color: #fff;
     padding: 20px;
-    font-size: 20px; 
-    line-height: 1.5; 
-    color: #ffffff; /* Change font color to white */
-    background-color: rgba(0, 0, 0, 0.315); /* Light transparent background */
-    backdrop-filter: blur(1px); /* Background blur effect */
-    margin-left: 12px;
-}
-.left-side{
-    margin-left: 100px;
 }
 
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-        .menu-button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #905d10d3;
-            color: #fff;
-            border-radius: 5px;
-            text-decoration: none;
-            transition: background-color 0.3s, color 0.3s;
-        }
+.footer-contact,
+.footer-social,
+.footer-links {
+    text-align: center;
+    margin: 10px;
+}
 
-        .menu-button:hover {
-            background-color: #f97026;
-        }
+.footer-contact h4,
+.footer-social h4,
+.footer-links h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    margin-right: 10px;
+    display: block;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 5px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-contact a {
+    text-decoration: none;
+    color: rgb(248, 248, 248);
+}
+
+.copyright {
+    padding: 2px;
+    text-align: center;
+    margin-top: 20px;
+}
+
     </style>
 </head>
 <body>
     <div class="website">
         <header>
             <h1>Patel's Restaurant</h1>
-            
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -170,59 +196,54 @@ body::before {
                     <li><a href="gallery.html">Gallery</a></li>
                 </ul>
             </nav>
-        </header><hr>
+        </header>
+        <hr>
 
         <section class="Wrapper">
-           
             <div class="left-side">
-                <img src="burger.png" alt="Restaurant Image" width="300">
+                <img src="images/burger.png" alt="Restaurant Image" width="300" class="falling-image">
             </div>
-            
-           
             <div class="right-side">
                 <h2>Welcome to Patel's Restaurant</h2>
                 <br>
-                <p>At Patel's Restaurant, we offer a unique culinary journey with the freshest ingredients and finest talent. Our globally inspired menu is crafted to delight every palate. Enjoy exceptional taste, ambiance, and service that make us a top dining destination in Kathmandu.</p>
-
+                <p>Experience the perfect blend of taste, ambiance, and exceptional service that has
+                     made us a beloved dining destination in <span>Kathmandu</span>.</p>
                 <p>Join us for a memorable dining experience and let our flavors transport you to a world of culinary delight.</p>
                 <br>
-                <a href="menu.html" class="menu-button">Explore Our Menu</a>
+                <button class="menu-button"><a href="menu.html" >Explore Our Menu</a></button>
             </div>
         </section>
-        <div class="Footer">
-            <div class="footer-container">
-                <div class="footer-contact">
-                    <h4>Contact Us</h4>
-                    <p>Mitrapark,Kathmandu<br>Opposite to Main Chowk</p>
-                    <p><a href="tel:9808166804">Phone:9808166804</a><br>Email:sandeyeppatel@gmail.com</p>
-                </div>
-                
-                <div class="footer-social">
-                    <h4>Follow Us</h4>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/sandip.shah.9022662"><i class='bx bxl-facebook-square' ></i></a>
-                        <a href="https://www.instagram.com/sande_yep/?igshid=ZGUzMzM3NWJiOQ%3D%3D&fbclid=IwAR3XtVfvlEq65qlbJYGH5Q7n2wPx3l713ei3BTMSc1NbmqRiC4MvN7_LTCc"><i class='bx bxl-instagram' ></i></a>
-                        <a href="#"><i class='bx bxl-whatsapp' ></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="home.html">Home</a></li>
-                        <li><a href="menu.html">Menu</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="reservation.html">Reservation</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                    </ul>
+    </div>
+    <footer class="Footer">
+        <div class="footer-container">
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Mitrapark, Kathmandu<br>Opposite to Main Chowk</p>
+                <p><a href="tel:9808166804">Phone: 9808166804</a><br>Email: sandeyeppatel@gmail.com</p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/sandip.shah.9022662"><i class='bx bxl-facebook-square'></i></a>
+                    <a href="https://www.instagram.com/sande_yep/?igshid=ZGUzMzM3NWJiOQ%3D%3D&fbclid=IwAR3XtVfvlEq65qlbJYGH5Q7n2wPx3l713ei3BTMSc1NbmqRiC4MvN7_LTCc"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-whatsapp'></i></a>
                 </div>
             </div>
-           
-            <div class="copyright">
-                <p>&copy;Copyright 2023 Patel's Restaurant</p>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                </ul>
             </div>
         </div>
-    </div>
+        <div class="copyright">
+            <p>&copy; 2023 Patel's Restaurant</p>
+        </div>
+    </footer>
 </body>
 </html>
